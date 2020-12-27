@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\enterprise\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\Users\maxt9\Desktop\RTSSSharedMemoryNET-master\RTSSSharedMemoryNET\x64\bin\Debug\RTSSSharedMemoryNET.dll">
+   <Modules>
+    <Module Name="rtsssharedmemorynet.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'RTSSSharedMemoryNET.dll' with a strong name key.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="RTSSSharedMemoryNET">
+       <Types>
+        <Type Name="AppEntry" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AudioCaptureFlags" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::AudioCaptureFlags' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AudioCaptureFlags2" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::AudioCaptureFlags2' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AudioCapturePTTEventPush" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::AudioCapturePTTEventPush' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AudioCapturePTTEventPush2" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::AudioCapturePTTEventPush2' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AudioCapturePTTEventRelease" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::AudioCapturePTTEventRelease' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AudioCapturePTTEventRelease2" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::AudioCapturePTTEventRelease2' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Flags" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::Flags' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InstantaneousFrames" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::InstantaneousFrames' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InstantaneousFrameTime" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::InstantaneousFrameTime' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InstantaneousTimeEnd" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::InstantaneousTimeEnd' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InstantaneousTimeStart" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::InstantaneousTimeStart' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Name" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::Name' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OSDBackgroundColor" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::OSDBackgroundColor' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OSDColor" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::OSDColor' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OSDCoordinateX" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::OSDCoordinateX' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OSDCoordinateY" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::OSDCoordinateY' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OSDFrameId" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::OSDFrameId' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OSDZoom" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::OSDZoom' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ProcessId" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::ProcessId' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ScreenshotFlags" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::ScreenshotFlags' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ScreenshotPath" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::ScreenshotPath' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ScreenshotQuality" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::ScreenshotQuality' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ScreenshotThreads" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::ScreenshotThreads' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatCount" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatCount' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatFlags" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatFlags' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatFramerateAvg" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatFramerateAvg' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatFramerateMax" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatFramerateMax' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatFramerateMin" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatFramerateMin' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatFrames" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatFrames' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatFrameTimeAvg" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatFrameTimeAvg' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatFrameTimeCount" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatFrameTimeCount' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatFrameTimeMax" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatFrameTimeMax' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatFrameTimeMin" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatFrameTimeMin' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatTimeEnd" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatTimeEnd' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StatTimeStart" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::StatTimeStart' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VideoCaptureFlags" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::VideoCaptureFlags' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VideoCaptureFlagsEx" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::VideoCaptureFlagsEx' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VideoCapturePath" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::VideoCapturePath' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VideoCaptureThreads" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::VideoCaptureThreads' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VideoFormat" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::VideoFormat' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VideoFramerate" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::VideoFramerate' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VideoFramesize" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::VideoFramesize' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VideoQuality" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'AppEntry::VideoQuality' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OSD" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#closeSharedMemory(System.Void*,RTSS_SHARED_MEMORY*)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="&lt;Module&gt;.CloseHandle(System.Void*)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="NonBreaking">
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="c:\users\maxt9\desktop\rtsssharedmemorynet-master\rtsssharedmemorynet" File="osd.cpp" Line="298">'OSD::closeSharedMemory(void*, RTSS_SHARED_MEMORY*)' calls 'Global::CloseHandle(void*)' but does not use the HRESULT or error code that the method returns. This could lead to unexpected behavior in error conditions or low-resource situations. Use the result in a conditional statement, assign the result to a variable, or pass it as an argument to another method.</Issue>
+            </Message>
+            <Message Id="&lt;Module&gt;.UnmapViewOfFile(System.optional(IsConst) Void*)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="NonBreaking">
+             <Issue Name="HResultOrErrorCode" Certainty="95" Level="Warning" Path="c:\users\maxt9\desktop\rtsssharedmemorynet-master\rtsssharedmemorynet" File="osd.cpp" Line="295">'OSD::closeSharedMemory(void*, RTSS_SHARED_MEMORY*)' calls 'Global::UnmapViewOfFile(const void*)' but does not use the HRESULT or error code that the method returns. This could lead to unexpected behavior in error conditions or low-resource situations. Use the result in a conditional statement, assign the result to a variable, or pass it as an argument to another method.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OSDEntry" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Owner" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'OSDEntry::Owner' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Text" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2020-12-10 10:45:21Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'OSDEntry::Text' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>Do not declare visible instance fields</Name>
+   <Description>Instance fields that are visible outside of the type that declares them, limit your ability to change the implementation details for those data items. Use properties instead. They do not compromise usability or performance and they do provide flexibility in that they conceal the implementation details of the underlying data.</Description>
+   <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182141.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806">
+   <Name>Do not ignore method results</Name>
+   <Description>The result of methods that return new instances of strings should be assigned to a variable and subsequently used. If the result of a method that creates a new object, such as String.ToLower(), is not assigned to a variable, the call is wasted.</Description>
+   <Resolution Name="HResultOrErrorCode">{0} calls {1} but does not use the HRESULT or error code that the method returns. This could lead to unexpected behavior in error conditions or low-resource situations. Use the result in a conditional statement, assign the result to a variable, or pass it as an argument to another method.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182273.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

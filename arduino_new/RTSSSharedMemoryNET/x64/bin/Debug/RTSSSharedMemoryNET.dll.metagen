@@ -1,0 +1,114 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly RTSSSharedMemoryNET, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class RTSSSharedMemoryNET.OSDEntry: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Owner : Public
+    System.String Text : Public
+Class RTSSSharedMemoryNET.AppEntry: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 ProcessId : Public
+    System.String Name : Public
+    RTSSSharedMemoryNET.AppFlags Flags : Public
+    System.DateTime InstantaneousTimeStart : Public
+    System.DateTime InstantaneousTimeEnd : Public
+    UInt32 InstantaneousFrames IsLong : Public
+    System.TimeSpan InstantaneousFrameTime : Public
+    RTSSSharedMemoryNET.StatFlags StatFlags : Public
+    System.DateTime StatTimeStart : Public
+    System.DateTime StatTimeEnd : Public
+    UInt32 StatFrames IsLong : Public
+    UInt32 StatCount IsLong : Public
+    UInt32 StatFramerateMin IsLong : Public
+    UInt32 StatFramerateAvg IsLong : Public
+    UInt32 StatFramerateMax IsLong : Public
+    UInt32 StatFrameTimeMin IsLong : Public
+    UInt32 StatFrameTimeAvg IsLong : Public
+    UInt32 StatFrameTimeMax IsLong : Public
+    UInt32 StatFrameTimeCount IsLong : Public
+    Int32 OSDCoordinateX : Public
+    Int32 OSDCoordinateY : Public
+    UInt32 OSDZoom IsLong : Public
+    System.Drawing.Color OSDColor : Public
+    UInt32 OSDFrameId IsLong : Public
+    System.Drawing.Color OSDBackgroundColor : Public
+    RTSSSharedMemoryNET.ScreenshotFlags ScreenshotFlags : Public
+    System.String ScreenshotPath : Public
+    UInt32 ScreenshotQuality IsLong : Public
+    UInt32 ScreenshotThreads IsLong : Public
+    RTSSSharedMemoryNET.VideoCaptureFlags VideoCaptureFlags : Public
+    System.String VideoCapturePath : Public
+    UInt32 VideoFramerate IsLong : Public
+    UInt32 VideoFramesize IsLong : Public
+    UInt32 VideoFormat IsLong : Public
+    UInt32 VideoQuality IsLong : Public
+    UInt32 VideoCaptureThreads IsLong : Public
+    UInt32 VideoCaptureFlagsEx IsLong : Public
+    UInt32 AudioCaptureFlags IsLong : Public
+    UInt32 AudioCaptureFlags2 IsLong : Public
+    Int64 AudioCapturePTTEventPush : Public
+    Int64 AudioCapturePTTEventRelease : Public
+    Int64 AudioCapturePTTEventPush2 : Public
+    Int64 AudioCapturePTTEventRelease2 : Public
+Class RTSSSharedMemoryNET.OSD: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.Version Version 'get ' : 
+  Methods:
+    get_Version(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Update(String): PrivateScope, Public, HideBySig
+    GetOSDEntries(): PrivateScope, Public, Static, HideBySig
+    GetAppEntries(): PrivateScope, Public, Static, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct RTSSSharedMemoryNET.AppFlags: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    RTSSSharedMemoryNET.AppFlags None = 0 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.AppFlags OpenGL = 65536 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.AppFlags DirectDraw = 16 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.AppFlags Direct3D8 = 256 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.AppFlags Direct3D9 = 4096 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.AppFlags Direct3D9Ex = 8192 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.AppFlags Direct3D10 = 1048576 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.AppFlags Direct3D11 = 16777216 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.AppFlags ProfileUpdateRequested = 268435456 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.AppFlags MASK = 17903888 : Public, Static, Literal, HasDefault
+Struct RTSSSharedMemoryNET.StatFlags: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    RTSSSharedMemoryNET.StatFlags None = 0 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.StatFlags Record = 1 : Public, Static, Literal, HasDefault
+Struct RTSSSharedMemoryNET.ScreenshotFlags: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    RTSSSharedMemoryNET.ScreenshotFlags None = 0 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.ScreenshotFlags RequestCapture = 1 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.ScreenshotFlags RequestCaptureOSD = 16 : Public, Static, Literal, HasDefault
+Struct RTSSSharedMemoryNET.VideoCaptureFlags: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    RTSSSharedMemoryNET.VideoCaptureFlags None = 0 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.VideoCaptureFlags RequestCaptureStart = 1 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.VideoCaptureFlags RequestCaptureProgress = 2 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.VideoCaptureFlags RequestCaptureStop = 4 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.VideoCaptureFlags RequestCaptureOSD = 16 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.VideoCaptureFlags INTERNAL_RESIZE = 65536 : Public, Static, Literal, HasDefault
+    RTSSSharedMemoryNET.VideoCaptureFlags MASK = 7 : Public, Static, Literal, HasDefault
