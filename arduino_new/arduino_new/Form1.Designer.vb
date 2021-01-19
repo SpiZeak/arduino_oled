@@ -38,6 +38,7 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.CPU = New System.Windows.Forms.Label()
         Me.FPS = New System.Windows.Forms.Label()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.SuspendLayout()
         '
         'GTEMP
@@ -154,6 +155,14 @@ Partial Class Form1
         Me.FPS.TabIndex = 6
         Me.FPS.Text = "FPS"
         '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
+        Me.NotifyIcon1.BalloonTipText = "Dubbelklicka ikonen för att öppna igen, hälsningar Max :)"
+        Me.NotifyIcon1.BalloonTipTitle = "Programmet minimerat"
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -193,4 +202,5 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents CPU As Label
     Friend WithEvents FPS As Label
+    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class

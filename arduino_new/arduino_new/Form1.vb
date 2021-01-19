@@ -12,6 +12,17 @@ Public Class Form1
     Dim cp As New Computer()
 
     Public Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Dim clArgs() As String = Environment.GetCommandLineArgs()
+
+        For i As Integer = 1 To 3 Step 2
+            If clArgs(i) = "--port" Then
+                TextBox1.Text = clArgs(i + 1)
+            ElseIf clArgs(i) = "--start" Then
+                Me.WindowState = FormWindowState.Minimized
+                startData()
+            End If
+        Next
+
         Timer1.Start()
         cp.GPUEnabled = True
         cp.CPUEnabled = True
@@ -65,31 +76,53 @@ Public Class Form1
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If flag = True Then
-            Button1.Text = "Start"
-            flag = False
-            SerialPort1.Close()
+            stopData()
         Else
-            Button1.Text = "Stop"
-            SerialPort1.PortName = TextBox1.Text
-            SerialPort1.BaudRate = 9600
-            SerialPort1.DataBits = 8
-            SerialPort1.Parity = Parity.None
-            SerialPort1.StopBits = StopBits.One
-            SerialPort1.Handshake = Handshake.None
-            SerialPort1.Encoding = System.Text.Encoding.Default
-            SerialPort1.Open()
-            flag = True
-            BackgroundWorker1.RunWorkerAsync()
+            startData()
         End If
     End Sub
 
-    'delay function
     Private Declare Function timeGetTime Lib "winmm.dll" () As Long
     Public lngStartTime As Long
+
     Public Sub delay(msdelay As Long)
         lngStartTime = timeGetTime()
         Do Until (timeGetTime() - lngStartTime) > msdelay
         Loop
     End Sub
-    'End delay function
+
+    Public Sub startData()
+        Button1.Text = "Stop"
+        SerialPort1.PortName = TextBox1.Text
+        SerialPort1.BaudRate = 9600
+        SerialPort1.DataBits = 8
+        SerialPort1.Parity = Parity.None
+        SerialPort1.StopBits = StopBits.One
+        SerialPort1.Handshake = Handshake.None
+        SerialPort1.Encoding = System.Text.Encoding.Default
+        SerialPort1.Open()
+        flag = True
+        BackgroundWorker1.RunWorkerAsync()
+    End Sub
+
+    Public Sub stopData()
+        Button1.Text = "Start"
+        flag = False
+        SerialPort1.Close()
+    End Sub
+
+    Private Sub Form1_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
+        If Me.WindowState = FormWindowState.Minimized Then
+            NotifyIcon1.Visible = True
+            NotifyIcon1.Icon = SystemIcons.Application
+            NotifyIcon1.ShowBalloonTip(5000)
+            ShowInTaskbar = False
+        End If
+    End Sub
+
+    Private Sub NotifyIcon1_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles NotifyIcon1.DoubleClick
+        ShowInTaskbar = True
+        Me.WindowState = FormWindowState.Normal
+        NotifyIcon1.Visible = False
+    End Sub
 End Class
